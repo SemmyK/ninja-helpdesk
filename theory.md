@@ -172,10 +172,10 @@ export default function BlogNavLink({ slug, children }) {
 
 ## folder and file structure
 
-  ### APP directory
-  
-  - all pages and components directory - client and server side components
-  - using app router
+      ### APP directory
+      
+      - all pages and components directory - client and server side components
+      - using app router
 
 - node_modules - folder for dependencies
 - public - folder for all files we want to make public on a website (images, static assets ), they will be awailable at the root of the domain
