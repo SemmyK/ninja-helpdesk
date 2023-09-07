@@ -172,6 +172,11 @@ export default function BlogNavLink({ slug, children }) {
 
 ## folder and file structure
 
+  ### APP directory
+  
+  - all pages and components directory - client and server side components
+  - using app router
+
 - node_modules - folder for dependencies
 - public - folder for all files we want to make public on a website (images, static assets ), they will be awailable at the root of the domain
 - app - folder for all app code (pages, components, stylesheets and route handlers), contains:
@@ -180,10 +185,7 @@ export default function BlogNavLink({ slug, children }) {
   - not-found.jsx - used for page that will be shown for any 404 error (it can be scoped to be different for each page just if we create new not-found.jsx files in folders for other pages)
   - loading.jsx - will be shown for any loading by default, but we can also define it as fallback attribute for Suspence component to show loading only for parts of page that is loading data not for the whole page
  
-  ### APP directory
-  
-  - all pages and components directory - client and server side components
-  - using app router
+
 
 ### Routing
 
