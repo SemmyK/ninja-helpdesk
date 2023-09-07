@@ -1,8 +1,8 @@
 # Getting Started with learning Next.js
 
-Project created with Next.js 13 crash course by The Net Ninja on YT mini support desk app.
+Project created with Next.js 13 crash course by The Net Ninja on YT mini support desk app usinf json-server as database.
 
-Files contain a lot of comments to clarify what the code does, also there is theory.md file for more explanation of new features Next.js offers
+Files contain a lot of comments to clarify what the code does, also there is **theory.md** file for more explanation of new features Next.js offers
 
 First, run the development server:
 
