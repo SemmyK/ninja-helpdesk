@@ -45,11 +45,6 @@ Rendering converts the code you write into user interfaces. React and Next.js al
 - good for SEO
 - better performance
 
-## APP directory
-
-- all pages and components directory - client and server side components
-- using app router
-
 ## Streaming content to the browser using suspence boundaries
 
 - allowing us to show loading message only on part of the screen(component) that is fetching the data, the rest of the page is fully loaded, it can be achieved by wrapping loading.jsx component into Suspence component which is build in
@@ -68,7 +63,7 @@ Rendering converts the code you write into user interfaces. React and Next.js al
 - cashing can be modified with settings adding settings object as second argument to fetch where we define how often next will revalidate cashed data and make a new request:
   -- revalidating after 30 sec
 
-  ```nextflow
+  ```next flow
 
    const getData = async () => {
   	try {
@@ -127,7 +122,7 @@ Rendering converts the code you write into user interfaces. React and Next.js al
 
   **Example**
 
-  ```nextflow
+  ```next flow
 
   const imageLoader = ({ src, width, quality }) => {
   return `https://example.com/${src}?w=${width}&q=${quality || 75}`
@@ -142,7 +137,8 @@ Rendering converts the code you write into user interfaces. React and Next.js al
 - useSelectedLayoutSegment is a Client Component hook that lets you read the active route segment one level below the Layout it is called from. You can use useSelectedLayoutSegment to create an active link component that changes style depending on the active segment.
   **Example**
 
-```
+```next flow
+
 'use client'
 
 import Link from 'next/link'
@@ -183,6 +179,11 @@ export default function BlogNavLink({ slug, children }) {
   - layout.jsx - used for content that needs to be on each page (navs, footers) and then we just wrap all components with layout insted of adding that content to each page individually
   - not-found.jsx - used for page that will be shown for any 404 error (it can be scoped to be different for each page just if we create new not-found.jsx files in folders for other pages)
   - loading.jsx - will be shown for any loading by default, but we can also define it as fallback attribute for Suspence component to show loading only for parts of page that is loading data not for the whole page
+ 
+  ### APP directory
+  
+  - all pages and components directory - client and server side components
+  - using app router
 
 ### Routing
 
